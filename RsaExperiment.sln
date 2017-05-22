@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{2BC39995-45E9-4730-8EBC-96CBFDE422C6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_mpir_p3", "Dependencies\mpir-3.0.0\build.vc15\lib_mpir_p3\lib_mpir_p3.vcxproj", "{F4418981-ABAA-4B7A-9538-3E0166149F28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{4F3FFE56-7D03-4B16-AC89-2876E336189A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "librsa", "Native\librsa\librsa.vcxproj", "{57B06008-1C7F-4747-B43B-95284F8AECA4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F4418981-ABAA-4B7A-9538-3E0166149F28} = {F4418981-ABAA-4B7A-9538-3E0166149F28}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "librsa_test", "Native\librsa_test\librsa_test.vcxproj", "{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F4418981-ABAA-4B7A-9538-3E0166149F28} = {F4418981-ABAA-4B7A-9538-3E0166149F28}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Print|Win32 = Debug Print|Win32
+		Debug|Win32 = Debug|Win32
+		Release Print|Win32 = Release Print|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4418981-ABAA-4B7A-9538-3E0166149F28}.Debug Print|Win32.ActiveCfg = Debug|Win32
+		{F4418981-ABAA-4B7A-9538-3E0166149F28}.Debug Print|Win32.Build.0 = Debug|Win32
+		{F4418981-ABAA-4B7A-9538-3E0166149F28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4418981-ABAA-4B7A-9538-3E0166149F28}.Debug|Win32.Build.0 = Debug|Win32
+		{F4418981-ABAA-4B7A-9538-3E0166149F28}.Release Print|Win32.ActiveCfg = Release|Win32
+		{F4418981-ABAA-4B7A-9538-3E0166149F28}.Release Print|Win32.Build.0 = Release|Win32
+		{F4418981-ABAA-4B7A-9538-3E0166149F28}.Release|Win32.ActiveCfg = Release|Win32
+		{F4418981-ABAA-4B7A-9538-3E0166149F28}.Release|Win32.Build.0 = Release|Win32
+		{57B06008-1C7F-4747-B43B-95284F8AECA4}.Debug Print|Win32.ActiveCfg = Debug Print|Win32
+		{57B06008-1C7F-4747-B43B-95284F8AECA4}.Debug Print|Win32.Build.0 = Debug Print|Win32
+		{57B06008-1C7F-4747-B43B-95284F8AECA4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{57B06008-1C7F-4747-B43B-95284F8AECA4}.Debug|Win32.Build.0 = Debug|Win32
+		{57B06008-1C7F-4747-B43B-95284F8AECA4}.Release Print|Win32.ActiveCfg = Release Print|Win32
+		{57B06008-1C7F-4747-B43B-95284F8AECA4}.Release Print|Win32.Build.0 = Release Print|Win32
+		{57B06008-1C7F-4747-B43B-95284F8AECA4}.Release|Win32.ActiveCfg = Release|Win32
+		{57B06008-1C7F-4747-B43B-95284F8AECA4}.Release|Win32.Build.0 = Release|Win32
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}.Debug Print|Win32.ActiveCfg = Debug Print|Win32
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}.Debug Print|Win32.Build.0 = Debug Print|Win32
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}.Debug|Win32.ActiveCfg = Debug|Win32
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}.Debug|Win32.Build.0 = Debug|Win32
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}.Release Print|Win32.ActiveCfg = Release Print|Win32
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}.Release Print|Win32.Build.0 = Release Print|Win32
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}.Release|Win32.ActiveCfg = Release|Win32
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4418981-ABAA-4B7A-9538-3E0166149F28} = {2BC39995-45E9-4730-8EBC-96CBFDE422C6}
+		{57B06008-1C7F-4747-B43B-95284F8AECA4} = {4F3FFE56-7D03-4B16-AC89-2876E336189A}
+		{399F2A31-ADFB-4311-B27C-6CF25BFBFA29} = {4F3FFE56-7D03-4B16-AC89-2876E336189A}
+	EndGlobalSection
+EndGlobal
